@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="'Segoe UI', Arial, sans-serif" role="img" aria-label="Jev vs Laya vs Lev structured AI decision engines comparison">
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#7b8794"/></marker>
+    <marker id="aj" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2f6fed"/></marker>
+    <marker id="al" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#1f9f83"/></marker>
+    <marker id="av" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#8a52c9"/></marker>
+    <style>
+      .t{fill:#fff;font-weight:600}
+      .st{fill:#eef;font-size:10px}
+      .lbl{fill:#5a6b7b;font-size:11px}
+      .hd{font-size:16px;font-weight:800}
+      .tag{font-size:11px;font-weight:700;letter-spacing:.5px}
+    </style>
+  </defs>
+
+  <rect width="1200" height="720" rx="14" fill="#f6f8fb"/>
+  <text x="34" y="42" font-size="23" font-weight="800" fill="#1a2733">Jev vs Laya vs Lev — structured AI decisions, three ways</text>
+  <text x="34" y="66" class="lbl" font-size="12.5">Same problem (typed decisions, not prose) — different approaches: hosted · local · hybrid-with-escalation</text>
+
+  <!-- shared loop banner -->
+  <rect x="34" y="84" width="1132" height="44" rx="10" fill="#eef2f7" stroke="#cfd8e0"/>
+  <text x="48" y="111" class="lbl" font-size="12" font-weight="700" fill="#334">Shared loop:</text>
+  <text x="150" y="111" font-size="12.5" fill="#334">Application State</text>
+  <text x="290" y="111" fill="#9aa7b5">→</text>
+  <text x="306" y="111" font-size="12.5" fill="#334">Typed Question</text>
+  <text x="430" y="111" fill="#9aa7b5">→</text>
+  <text x="446" y="111" font-size="12.5" fill="#334">Decision</text>
+  <text x="520" y="111" fill="#9aa7b5">→</text>
+  <text x="536" y="111" font-size="12.5" fill="#334">Application Action</text>
+
+  <!-- ===== JEV column ===== -->
+  <rect x="34" y="150" width="360" height="500" rx="14" fill="#eef4ff" stroke="#2f6fed" stroke-width="2"/>
+  <text x="54" y="186" class="hd" fill="#2f6fed">→ Jev</text>
+  <rect x="250" y="168" width="124" height="24" rx="12" fill="#2f6fed"/><text x="312" y="185" text-anchor="middle" class="tag" fill="#fff">HOSTED</text>
+  <text x="54" y="212" class="lbl" font-size="12">Hosted decision model for</text>
+  <text x="54" y="230" class="lbl" font-size="12">production + external integrations.</text>
+
+  <rect x="54" y="250" width="320" height="54" rx="10" fill="#2f6fed"/>
+  <text x="214" y="274" text-anchor="middle" class="t" font-size="12.5">Structured app state → Jev (hosted)</text>
+  <text x="214" y="292" text-anchor="middle" class="st">managed decision model</text>
+
+  <text x="214" y="330" text-anchor="middle" fill="#2f6fed" font-size="18">↓</text>
+
+  <rect x="54" y="342" width="320" height="60" rx="10" fill="#fff" stroke="#2f6fed"/>
+  <text x="214" y="366" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1a4fb0">Typed decision</text>
+  <text x="214" y="386" text-anchor="middle" class="lbl" font-size="12">Choice · Score · Null</text>
+
+  <text x="214" y="424" text-anchor="middle" fill="#2f6fed" font-size="18">↓</text>
+  <rect x="54" y="436" width="320" height="40" rx="8" fill="#dbe7fb"/>
+  <text x="214" y="461" text-anchor="middle" font-size="12" fill="#1a4fb0">Application action</text>
+
+  <rect x="54" y="560" width="320" height="70" rx="10" fill="#f4f8ff" stroke="#bcd0f5"/>
+  <text x="68" y="582" class="lbl" font-size="11" font-weight="700" fill="#2f6fed">Best for</text>
+  <text x="68" y="601" class="lbl" font-size="11">Simple, bounded, production-grade</text>
+  <text x="68" y="618" class="lbl" font-size="11">decisions &amp; external integrations</text>
+
+  <!-- ===== LAYA column ===== -->
+  <rect x="420" y="150" width="360" height="500" rx="14" fill="#e9f7f2" stroke="#1f9f83" stroke-width="2"/>
+  <text x="440" y="186" class="hd" fill="#1f9f83">→ Laya</text>
+  <rect x="632" y="168" width="128" height="24" rx="12" fill="#1f9f83"/><text x="696" y="185" text-anchor="middle" class="tag" fill="#fff">LOCAL</text>
+  <text x="440" y="212" class="lbl" font-size="12">Open-weight engine for local /</text>
+  <text x="440" y="230" class="lbl" font-size="12">self-hosted execution.</text>
+
+  <rect x="440" y="250" width="320" height="54" rx="10" fill="#1f9f83"/>
+  <text x="600" y="274" text-anchor="middle" class="t" font-size="12.5">Structured app state → Laya (local)</text>
+  <text x="600" y="292" text-anchor="middle" class="st">Laya encoders · non-autoregressive</text>
+
+  <text x="600" y="330" text-anchor="middle" fill="#1f9f83" font-size="18">↓</text>
+
+  <rect x="440" y="342" width="320" height="60" rx="10" fill="#fff" stroke="#1f9f83"/>
+  <text x="600" y="366" text-anchor="middle" font-size="12.5" font-weight="700" fill="#12776a">Fast typed decision</text>
+  <text x="600" y="386" text-anchor="middle" class="lbl" font-size="12">you control the runtime</text>
+
+  <text x="600" y="424" text-anchor="middle" fill="#1f9f83" font-size="18">↓</text>
+  <rect x="440" y="436" width="320" height="40" rx="8" fill="#d6f0e8"/>
+  <text x="600" y="461" text-anchor="middle" font-size="12" fill="#12776a">Application action</text>
+
+  <rect x="440" y="560" width="320" height="70" rx="10" fill="#f1fbf8" stroke="#aee0d3"/>
+  <text x="454" y="582" class="lbl" font-size="11" font-weight="700" fill="#1f9f83">Best for</text>
+  <text x="454" y="601" class="lbl" font-size="11">Fast local decisions · customization</text>
+  <text x="454" y="618" class="lbl" font-size="11">· offline inference · own the stack</text>
+
+  <!-- ===== LEV column ===== -->
+  <rect x="806" y="150" width="360" height="500" rx="14" fill="#f3ecfc" stroke="#8a52c9" stroke-width="2"/>
+  <text x="826" y="186" class="hd" fill="#8a52c9">→ Lev</text>
+  <rect x="1010" y="168" width="138" height="24" rx="12" fill="#8a52c9"/><text x="1079" y="185" text-anchor="middle" class="tag" fill="#fff">HYBRID</text>
+  <text x="826" y="212" class="lbl" font-size="12">Hybrid engine that adds an</text>
+  <text x="826" y="230" class="lbl" font-size="12">escalation path.</text>
+
+  <rect x="826" y="250" width="320" height="48" rx="10" fill="#1f9f83"/>
+  <text x="986" y="279" text-anchor="middle" class="t" font-size="12.5">Fast decision (Laya-based inference)</text>
+
+  <text x="986" y="320" text-anchor="middle" fill="#8a52c9" font-size="16">↓</text>
+
+  <!-- confidence diamond -->
+  <polygon points="986,330 1066,366 986,402 906,366" fill="#fff" stroke="#8a52c9" stroke-width="2"/>
+  <text x="986" y="364" text-anchor="middle" font-size="11.5" font-weight="700" fill="#6b39b0">Confidence</text>
+  <text x="986" y="380" text-anchor="middle" font-size="11.5" font-weight="700" fill="#6b39b0">check</text>
+
+  <!-- confident -> action -->
+  <rect x="826" y="430" width="150" height="56" rx="10" fill="#e7ddf6"/>
+  <text x="901" y="455" text-anchor="middle" font-size="11" fill="#6b39b0">confident →</text>
+  <text x="901" y="472" text-anchor="middle" font-size="11" font-weight="700" fill="#6b39b0">action</text>
+
+  <!-- uncertain -> thinker -->
+  <rect x="996" y="430" width="150" height="56" rx="10" fill="#8a52c9"/>
+  <text x="1071" y="453" text-anchor="middle" class="t" font-size="11">uncertain →</text>
+  <text x="1071" y="470" text-anchor="middle" class="t" font-size="11">Thinker model</text>
+
+  <text x="1071" y="508" text-anchor="middle" fill="#8a52c9" font-size="16">↓</text>
+  <rect x="996" y="518" width="150" height="34" rx="8" fill="#e7ddf6"/>
+  <text x="1071" y="540" text-anchor="middle" font-size="11" fill="#6b39b0">deeper reasoning → action</text>
+
+  <rect x="826" y="560" width="320" height="70" rx="10" fill="#f8f3fe" stroke="#d6c3f0"/>
+  <text x="840" y="582" class="lbl" font-size="11" font-weight="700" fill="#8a52c9">Best for</text>
+  <text x="840" y="601" class="lbl" font-size="11">Uncertain / complex decisions —</text>
+  <text x="840" y="618" class="lbl" font-size="11">fast first, deeper reasoning when needed</text>
+
+  <!-- confidence branch arrows -->
+  <line x1="946" y1="388" x2="906" y2="428" stroke="#8a52c9" stroke-width="2" marker-end="url(#av)"/>
+  <line x1="1026" y1="388" x2="1066" y2="428" stroke="#8a52c9" stroke-width="2" marker-end="url(#av)"/>
+
+  <!-- takeaway footer -->
+  <text x="34" y="676" font-size="12.5" font-weight="700" fill="#1a2733">Takeaway:</text>
+  <text x="110" y="676" font-size="12.5" fill="#2f6fed">Jev manages the decision.</text>
+  <text x="340" y="676" font-size="12.5" fill="#1f9f83">Laya brings it local.</text>
+  <text x="520" y="676" font-size="12.5" fill="#8a52c9">Lev escalates when fast isn't enough.</text>
+  <text x="34" y="700" class="lbl" font-size="11">Not every decision needs a large reasoning model — mix mechanisms by task complexity and risk.  ·  by eswaran-hariharan</text>
+</svg>
