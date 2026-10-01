@@ -1,3 +1,5 @@
+![Structured AI Decisions — Jev, Laya, Lev](hero.svg)
+
 # Jev vs Laya vs Lev — Structured AI Decisions, Three Ways
 
 > **In one sentence:** Jev, Laya, and Lev all solve the same problem — **structured AI decisions** instead of free-form text — but they take very different approaches: **Jev is hosted** (managed, for production), **Laya is local** (open-weight, self-hosted, fast), and **Lev is hybrid** (fast decisions first, with an escalation path to deeper reasoning when needed).

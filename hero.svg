@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" font-family="'Segoe UI', Arial, sans-serif" role="img" aria-label="Jev Laya Lev hero banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f1b2d"/>
+      <stop offset="0.55" stop-color="#13293f"/>
+      <stop offset="1" stop-color="#0b2a26"/>
+    </linearGradient>
+    <linearGradient id="jev" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f8cf7"/><stop offset="1" stop-color="#2f6fed"/></linearGradient>
+    <linearGradient id="laya" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2fd3af"/><stop offset="1" stop-color="#12b39a"/></linearGradient>
+    <linearGradient id="lev" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a66be0"/><stop offset="1" stop-color="#8a52c9"/></linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <radialGradient id="orb" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stop-color="#1ec9ad" stop-opacity="0.35"/><stop offset="1" stop-color="#1ec9ad" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <rect width="1200" height="420" rx="18" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="260" fill="url(#orb)"/>
+  <circle cx="200" cy="360" r="200" fill="url(#orb)"/>
+
+  <g opacity="0.25" stroke="#7fd8c6" stroke-width="2" fill="none">
+    <path d="M80,210 H1120" stroke-dasharray="2 10" stroke-linecap="round"/>
+  </g>
+
+  <text x="72" y="150" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-1">Structured AI Decisions</text>
+  <text x="74" y="196" font-size="22" fill="#9fb4c7">Three approaches to turning application state into typed decisions — not prose.</text>
+
+  <g filter="url(#glow)">
+    <rect x="74" y="250" width="300" height="104" rx="16" fill="url(#jev)"/>
+    <rect x="400" y="250" width="300" height="104" rx="16" fill="url(#laya)"/>
+    <rect x="726" y="250" width="400" height="104" rx="16" fill="url(#lev)"/>
+  </g>
+
+  <text x="98" y="294" font-size="26" font-weight="800" fill="#fff">Jev</text>
+  <text x="98" y="322" font-size="14" fill="#eaf1ff">Hosted · managed</text>
+  <text x="98" y="342" font-size="13" fill="#d4e2ff">Choice · Score · Null</text>
+
+  <text x="424" y="294" font-size="26" font-weight="800" fill="#06352c">Laya</text>
+  <text x="424" y="322" font-size="14" fill="#06352c">Local · open-weight</text>
+  <text x="424" y="342" font-size="13" fill="#0a4a3e">fast, non-autoregressive</text>
+
+  <text x="750" y="294" font-size="26" font-weight="800" fill="#fff">Lev</text>
+  <text x="750" y="322" font-size="14" fill="#f3e9ff">Hybrid · escalation path</text>
+  <text x="750" y="342" font-size="13" fill="#e7d6fb">fast first → deeper reasoning when needed</text>
+
+  <text x="1126" y="398" text-anchor="end" font-size="12" fill="#5f7488">by eswaran-hariharan</text>
+</svg>
